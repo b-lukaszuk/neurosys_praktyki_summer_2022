@@ -1,0 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+showcase-music-star/node_modules
+showcase-music-star/.pnp
+showcase-music-star/.pnp.js
+
+# testing
+showcase-music-star/coverage
+
+# production
+showcase-music-star/build
+
+# misc
+showcase-music-star/.DS_Store
+showcase-music-star/.env.local
+showcase-music-star/.env.development.local
+showcase-music-star/.env.test.local
+showcase-music-star/.env.production.local
+
+showcase-music-star/npm-debug.log*
+showcase-music-star/yarn-debug.log*
+showcase-music-star/yarn-error.log*
