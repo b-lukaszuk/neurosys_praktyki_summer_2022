@@ -1,6 +1,15 @@
 # NeuroSYS praktyki (summer 2022)
 
+# Table of contents
+
+1. [Zadanie rekrutacyjne](#zadanie-rekrutacyjne---praktyki-front-end)
+2. [Uruchamianie](#uruchamianie)
+
+---
+
 ## Zadanie rekrutacyjne - praktyki front-end
+
+[Go to: Table of contents](#table-of-contents)
 
 **Cel:** Stworzenie wizytówki dla dowolnej gwiazdy muzycznej :)
 
@@ -27,3 +36,13 @@ Na stronie mile widziane będą zdjęcia oraz osadzony film z serwisu Youtube lu
 W zadaniu oprócz estetyki i animacji, będzie oceniane również wykorzystanie możliwości jakie dają JS i CSS oraz czystość kodu. Wykorzystanie technologii React będzie dodatkowym atutem.
 
 Podczas tworzenia strony należy wykorzystać system kontroli wersji GIT i publiczne repozytorium w serwisie github lub gitlab.
+
+## Uruchamianie
+
+[Go to: Table of contents](#table-of-contents)
+
+```bash
+cd showcase-music-star
+npm start # opens http://localhost:3000/ in the browser
+# Ctrl-C stops the running localhost
+```
