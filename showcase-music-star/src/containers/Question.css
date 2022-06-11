@@ -1,0 +1,23 @@
+fieldset {
+    padding: 1em;
+    max-width: 25em;
+    margin: 0.25em;
+}
+
+fieldset span {
+    padding: 0.5em;
+}
+
+fieldset input[type="radio"] {
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0.25em;
+}
+
+fieldset input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+fieldset label:hover {
+    cursor: pointer;
+}

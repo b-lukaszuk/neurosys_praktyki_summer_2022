@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import Button from "../components/Button";
 import Checkbox from "../components/Checkbox";
+import Question from "./Question";
+import questions from "../questionsDb/questions";
 import TextInput from "../components/TextInput";
 
 import "./ContactForm.css";
@@ -13,6 +15,11 @@ const ContactForm = () => {
     const [phone, setPhone] = useState("");
     const [msg, setMsg] = useState("");
     const [isRobot, setIsRobot] = useState(true);
+    const [answerCorrect, setAnswerCorrect] = useState(false);
+    const getRandQuestionId = () => {
+        return Math.floor(Math.random() * (questions.length - 0)) + 0;
+    }
+    const [questionId, setQuestionId] = useState(getRandQuestionId());
 
     const clearAllFields = () => {
         setName("");
@@ -35,7 +42,6 @@ const ContactForm = () => {
     }
 
     const isMailOk = () => {
-        console.log(isTextOk(/^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$/, mail));
         return isTextOk(/^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$/, mail);
     }
 
@@ -54,6 +60,9 @@ const ContactForm = () => {
             window.alert("Wprowadzono niepoprawne dane. Popraw input.");
         } else if (!isMsgOk()) {
             window.alert("Wiadomosc jest za krotka (>= 20 znaków)");
+        } else if (!answerCorrect) {
+            window.alert("Niepoprawna odpowiedź na pytanie. Spróbuj ponownie");
+            setQuestionId(getRandQuestionId());
         } else {
             window.alert("Formularz wysłany");
             clearAllFields();
@@ -100,6 +109,11 @@ const ContactForm = () => {
             />
             <Button displayedText="Wyślij formularz"
                 onClick={sendForm} />
+            {
+                !isRobot &&
+                <Question actionOnSelect={setAnswerCorrect}
+                    question={questions[questionId]} />
+            }
         </div>
     );
 }
