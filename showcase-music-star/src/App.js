@@ -1,6 +1,11 @@
 import './App.css';
 
-function App() {
+import useTitle from './customHooks/useTitle';
+
+const App = () => {
+
+  useTitle("Ed Sheeran");
+
   return (
     <div className="App">
       <h1>Showcase of a music star</h1>
