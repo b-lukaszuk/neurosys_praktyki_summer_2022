@@ -18,11 +18,35 @@ const ContactForm = () => {
         setIsRobot((prev) => !prev);
     }
 
+    const isTextOk = (pattern, text) => {
+        return pattern.test(text);
+    }
+
+    const isNameOk = () => {
+        return isTextOk(/^[A-Z][a-z]{1,} [A-Z][a-z]{1,}$/, name);
+    }
+
+    const isMailOk = () => {
+        console.log(isTextOk(/^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$/, mail));
+        return isTextOk(/^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$/, mail);
+    }
+
+    const isPhoneOk = () => {
+        return isTextOk(/^[0-9]{6,9}$/, phone);
+    }
+
+    const isMsgOk = () => {
+        return msg.trim().length > 20 ? true : false;
+    }
+
     const sendForm = () => {
         if (isRobot) {
             window.alert("Zaznacz pole 'Nie jestem Robotem'");
+        } else if (!isNameOk() && !isPhoneOk() && !isMailOk()) {
+            window.alert("Wprowadzono niepoprawne dane. Popraw input.");
+        } else if (!isMsgOk()) {
+            window.alert("Wiadomosc jest za krotka (>= 20 znaków)");
         } else {
-            console.log(msg);
             window.alert("Formularz wysłany");
         }
     }
