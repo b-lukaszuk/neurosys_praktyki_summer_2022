@@ -14,6 +14,14 @@ const ContactForm = () => {
     const [msg, setMsg] = useState("");
     const [isRobot, setIsRobot] = useState(true);
 
+    const clearAllFields = () => {
+        setName("");
+        setMail("");
+        setPhone("");
+        setMsg("")
+        setIsRobot(true);
+    }
+
     const toggleIsRobot = () => {
         setIsRobot((prev) => !prev);
     }
@@ -48,10 +56,12 @@ const ContactForm = () => {
             window.alert("Wiadomosc jest za krotka (>= 20 znaków)");
         } else {
             window.alert("Formularz wysłany");
+            clearAllFields();
         }
     }
 
     return (
+        // pseudo-form
         <div className="ContactForm">
             {/* simple regexes written by me, not 100% effective */}
             {/* normally I would just downloaded proper, spacious ones from the internet*/}
