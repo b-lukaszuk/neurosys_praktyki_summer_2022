@@ -1,0 +1,10 @@
+.Video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Video iframe {
+    width: 640px;
+    height: 360px;
+}
