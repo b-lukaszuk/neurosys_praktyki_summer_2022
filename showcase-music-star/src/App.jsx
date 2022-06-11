@@ -37,7 +37,6 @@ const App = () => {
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </Router>
-
     </div>
   );
 }

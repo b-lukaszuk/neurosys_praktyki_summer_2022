@@ -1,0 +1,6 @@
+.AboutMe p {
+    text-align: justify;
+    text-justify: inner-word;
+    width: 80 vw;
+    margin: 2em;
+}
