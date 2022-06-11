@@ -5,58 +5,123 @@ import "./AboutMe.css";
 const AboutMe = () => {
     return (
         <div className="AboutMe">
-            <h1>About me</h1>
-            <p>You know who I am</p>
-            <p>Still If You lived under a rock here is what wikipedia says about me:</p>
+            <h1>O mnie</h1>
+            <p>Dobrze wiesz kim jestem :)</p>
             <p>
-                <b> Edward Christopher Sheeran MBE </b>(born 17 February 1991)
-                is an English singer and songwriter. Born in Halifax, West
-                Yorkshire and raised in Framlingham, Suffolk, he began writing
-                songs around the age of eleven. In early 2011, Sheeran
-                independently released the extended play, No. 5 Collaborations
-                Project. He signed with Asylum Records the same year.  Sheeran's
-                debut album, + (pronounced "plus"), was released in September
-                2011 and topped the UK Albums Chart. It contained his first hit
-                single "The A Team". In 2012, Sheeran won the Brit Awards for
-                Best British Male Solo Artist and British Breakthrough Act.
-                Sheeran's second studio album, × (pronounced "multiply"), topped
-                charts around the world upon its release in June 2014. It was
-                named the second-best-selling album worldwide of 2015. In the
-                same year, × won Album of the Year at the 2015 Brit Awards, and
-                he received the Ivor Novello Award for Songwriter of the Year
-                from the British Academy of Songwriters, Composers and Authors.
-                A single from ×, "Thinking Out Loud", earned him the 2016 Grammy
-                Awards for Song of the Year and Best Pop Solo Performance.
-                Sheeran's third album, ÷ (pronounced "divide"), was released in
-                March 2017, and was the best-selling album worldwide of 2017.
-                The first two singles from the album, "Shape of You" and "Castle
-                on the Hill", broke records in a number of countries by debuting
-                in the top two positions of the charts. He also became the first
-                artist to have two songs debut in the US top 10 in the same
-                week. By March 2017, Sheeran had accumulated ten top 10 singles
-                from ÷ on the UK Singles Chart, breaking the record for most top
-                10 UK singles from one album. His fourth single from ÷,
-                "Perfect", reached number one in the US, Australia and the UK,
-                where it became the Christmas number one in 2017. The world's
-                best-selling artist of 2017, he was named the Global Recording
-                Artist of the Year. Released in 2019, his fourth studio album
-                No.6 Collaborations Project debuted at number one in most major
-                markets, and spawned three UK number one singles, "I Don't
-                Care", "Beautiful People" and "Take Me Back to London". His
-                fifth studio album, = (pronounced "equals"), topped the charts
-                in most major markets in 2021.  Sheeran has sold more than 150
-                million records worldwide, making him one of the world's
-                best-selling music artists.He has 84.5 million
-                RIAA-certified units in the US, and two of his albums are in
-                the list of the best-selling albums in UK chart history. In
-                December 2019, the Official Charts Company named him artist of
-                the decade, with the most combined success in the UK album and
-                singles charts in the 2010s. Globally, Spotify named him the
-                second most streamed artist of the decade. Beginning in March
-                2017, his ÷ Tour became the highest-grossing of all time in
-                August 2019. An alumnus of the National Youth Theatre in London,
-                Sheeran's acting roles include appearing in the 2019 film
-                Yesterday.
+                Jakkolwiek, gdybyś przypadkiem żył pod jakimś kamieniem, oto co
+                pisze o mnie wikipedia:
+            </p>
+            <p>
+                Ed Sheeran, właśc. Edward Christopher Sheeran (ur. 17 lutego
+                1991 w Halifaksie) – brytyjski piosenkarz, autor tekstów,
+                gitarzysta, producent muzyczny i aktor, wykonujący muzykę z
+                pogranicza popu, rocka, folku i hip-hopu.
+            </p>
+            <p>
+                W 2005 nagrywał swoje pierwsze utwory, trzy lata później
+                przeniósł się do Londynu, by móc dalej rozwijać karierę
+                muzyczną. W tym czasie wydał trzy EP-ki: The Orange Room, Ed
+                Sheeran i Want Some?. W 2009 zagrał 312 koncertów, chcąc pobić
+                wynik 200 koncertów Jamesa Morrisona. W tym samym roku ukazał
+                się jego kolejny minialbum, zatytułowany You Need Me.  W 2010
+                nagrał trzy nowe minikrążki: Loose Change, Songs I Wrote with
+                Amy oraz Live at the Bedford. Na początku 2011 wydał ósmą EP-kę
+                zatytułowaną No. 5 Collaborations Project, która zdobyła uwagę
+                szerszej publiczności. Trzy miesiące później Sheeran podpisał
+                kontrakt z wytwórnią Asylum/Atlantic Records, pod szyldem której
+                ukazały się jego kolejne EP-ki: One Take EP, iTunes Festival:
+                London 2011 Performance EP, Thank You EP, The Slumdon Bridge
+                (nagrana we współpracy z Yelawolfem) i iTunes Festival: London
+                2012 Performance EP.
+            </p>
+            <p>
+                W czerwcu 2011 wydał swój pierwszy singiel „The A Team”, który
+                zadebiutował na trzecim miejscu brytyjskiej listy przebojów. Na
+                fali sukcesów singli „The A Team” i „Lego House” jego
+                debiutancki album, zatytułowany +, uzyskał w kraju status
+                czterokrotnej platynowej płyty, rozchodząc się w ponad 1,2
+                miliona egzemplarzy. W 2012 Sheeran zdobył dwie nagrody Brit
+                Awards w kategoriach „Najlepszy artysta” oraz „Najlepszy
+                przełomowy wykonawca”, a za utwór „The A Team” otrzymał nagrodę
+                Ivor Novello Awards. 29 października 2012 premierę miała
+                piosenka „Little Things” brytyjsko-irlandzkiego boysbandu One
+                Direction, którą Sheeran napisał w wieku 16 lat. Wcześniej
+                stworzył też utwory „Moments” i „Over Again”, które także
+                znalazły się w repertuarze zespołu. 13 marca 2013 piosenkarz
+                wyruszył wraz z Taylor Swift w jej trasę koncertową promującą
+                płytę pt. Red.
+            </p>
+            <p>
+                W 2013 nagrał i wydał piosenkę „I See Fire”, która została
+                napisana i nagrana w celu promocji filmu Hobbit: Pustkowie
+                Smauga. W 2014 wydał swój drugi album studyjny, zatytułowany X,
+                na którym znalazło się dwanaście utworów, w tym single „Sing”,
+                „Don’t” i „Thinking Out Loud”. Rozszerzona wersja płyty została
+                wzbogacona o pięć nowych piosenek, m.in. o singiel „I See Fire”.
+                W sierpniu Sheeran wyruszył w trasę koncertową promującą płytę.
+                W styczniu 2015 zdobył nominację do Nagród Brytyjskiego Rynku
+                Fonograficznego w czterech kategoriach: Teledysk roku
+                brytyjskiego wykonawcy i Brytyjski singiel roku (za utwór
+                „Thinking Out Loud”), a także Brytyjski album roku według
+                MasterCard (za płytę X) i Brytyjski artysta roku, za
+                wygraną w których ostatecznie otrzymał dwie statuetki.
+                Oprócz tego, podczas gali, zorganizowanej 25 lutego w O2 Arena,
+                zaśpiewał utwór „Bloodstream”. Również w lutym 2015 roku
+                artysta wystąpił po raz pierwszy w Polsce na warszawskim
+                Torwarze.  21 maja odebrał Ivor Novello Award za wygraną w
+                kategorii autor piosenek roku. Pod koniec czerwca został
+                współprowadzącym gali wręczenia Much Music Video Awards
+                organizowanej w Toronto. Podczas gali zaśpiewał piosenki
+                „Thinking Out Loud” i „Photograph”, a także zdobył dwie
+                statuetki za wygraną w kategoriach Najlepszy międzynarodowy
+                artysta oraz Międzynarodowy artysta lub zespół wzbudzający
+                największe zainteresowanie. W tym samym miesiącu wystąpił w
+                Kansas City na otwarciu koncertu zespołu The Rolling Stones w
+                ramach ich trasy koncertowej zatytułowanej Zip Code Tour. Od 10
+                do 12 lipca zagrał wyprzedane koncerty na londyńskim Stadionie w
+                Wembley. 16 sierpnia stacja NBC wyemitowała relację dokumentalną
+                z widowiska zatytułowaną Ed Sheeran – Live at Wembley Stadium,
+                która zawierała także zakulisowe ujęcia.  We wrześniu Sheeran
+                wystąpił podczas ekologicznego Festiwalu Globalnych Obywateli
+                organizowanego w Nowym Jorku. Pod koniec października został
+                jednym z prowadzących 22. galę wręczenia Europejskiej Nagrody
+                Muzycznej MTV odbywającej się w Mediolanie. Podczas ceremonii
+                odebrał statuetki za wygraną w kategoriach: Najlepszy występ na
+                żywo oraz Najlepsza prezentacja sceniczna.
+            </p>
+            <p>
+                13 grudnia 2015 opublikował na Facebooku oświadczenie, w którym
+                ogłosił przerwę od mediów społecznościowych. Zapowiedział przy
+                okazji pracę nad trzecim albumem studyjnym. 16 lutego 2016
+                zdobył dwie nagrody Grammy: w kategorii „Piosenka roku” oraz
+                „Najlepszy popowy występ solowy”. 15 września tego samego roku
+                do kin trafił film Bridget Jones 3, w którym Sheeran występuje
+                epizodycznie, grając samego siebie.  5 stycznia 2017 pojawiły
+                się dwie nowe piosenki, promujące trzecią płytę: „Castle on the
+                Hill” i „Shape of You”. 17 lutego 2017 pojawiła się kolejna:
+                „How Would You Feel? (Paean)”. Trzeci album studyjny,
+                zatytułowany ÷, trafił do sprzedaży 3 marca. Film dokumentalny
+                ukazujący kulisy pisania albumu ÷ pt. „Songwriter” miał premierę
+                23 lutego 2018 roku na Międzynarodowym Festiwalu Filmowego w
+                Berlinie (Berlinale). Do Apple Music film trafił zaś 28 sierpnia
+                2018 roku. Film jest debiutem reżyserskim kuzyna Eda Sheerana –
+                Murraya Cummingsa.  W lipcu 2019 roku wydał czwarty studyjny
+                album No 6. Collaborations Project.  24 grudnia 2019 roku
+                opublikował oświadczenie, w którym oznajmił, iż robi kolejną
+                przerwę w karierze.
+            </p>
+            <p>
+                25 czerwca 2021 roku wydał pierwszy singiel promujący nowy album
+                zatytułowany "=". Kolejnymi singlami zostały piosenki „Shivers”
+                oraz „Overpass Graffiti”.  Album "=" (czyt. Equals) został
+                wydany 29 października 2021 roku jako jego piąty album studyjny.
+                3 grudnia 2021 wraz z Eltonem Johnem wydał piosenkę Merry
+                Christmas, z której dochód ma zostać przeznaczony po połowie na
+                fundację Eda, zapewniającą dotacje młodym muzykom w jego
+                rodzinnym mieście w Suffolk oraz na organizację charytatywną
+                Eltona zajmującą się AIDS.  W marcu 2022 wypuścił
+                dwa single ze współpracą z J Balvin(ang.) zatytułowane
+                "Sigue[18]" oraz "Forever My Love".
             </p>
         </div>
     );
