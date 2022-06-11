@@ -1,7 +1,9 @@
-import './App.css';
+import React from 'react';
 
-import useTitle from './customHooks/useTitle';
-import Video from './components/Video';
+import useTitle from "./customHooks/useTitle";
+import VideoCarousel from "./containers/VideoCarousel";
+
+import './App.css';
 
 const App = () => {
 
@@ -12,8 +14,7 @@ const App = () => {
   return (
     <div className="App">
       <h1>{artistName}</h1>
-      <Video url={"https://www.youtube.com/embed/2Vv-BfVoq4g"} title={"Perfect"} />
-
+      <VideoCarousel />
     </div>
   );
 }

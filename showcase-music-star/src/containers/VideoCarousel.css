@@ -1,0 +1,14 @@
+.VideoCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.VideoCarousel h2 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.VideoCarousel h2:hover {
+    cursor: pointer;
+}
