@@ -1,0 +1,9 @@
+.ContactForm {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10em;
+    border: 1px solid white;
+    flex-wrap: wrap;
+}

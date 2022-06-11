@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 
+import ContactForm from "./ContactForm";
+
 import "./ContactPage.css";
 
 const ContactPage = () => {
@@ -8,7 +10,7 @@ const ContactPage = () => {
     return (
         <div className="ContactPage">
             <p className="close" onClick={() => navigate(-1)}>&#10006;</p>
-            <p>Contact Page</p>
+            <ContactForm />
         </div>
     );
 }
