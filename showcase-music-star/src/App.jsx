@@ -17,12 +17,17 @@ import "./App.css";
 const App = () => {
 
   const artistName = "Ed Sheeran";
+  const validRoutes = [
+    { id: 0, name: "Home", path: "/home" },
+    { id: 1, name: "O mnie", path: "/about-me" },
+    { id: 2, name: "Kontakt", path: "/contact" },
+  ];
 
   useTitle(artistName);
 
   return (
     <div className="App">
-      <Hero artistName={artistName} />
+      <Hero artistName={artistName} validRoutes={validRoutes} />
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />

@@ -10,6 +10,7 @@
 
 .Hero h1 {
     font-family: 'Permanent Marker' cursive;
+    margin-top: 2em;
     color: white;
 }
 
@@ -20,7 +21,7 @@
     list-style-type: none;
     color: white;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 .Hero ul li {
@@ -33,4 +34,9 @@
 .Hero ul li:hover {
     cursor: pointer;
     transform: scale(1.2)
+}
+
+.Hero ul li a {
+    color: white;
+    text-decoration: none;
 }
