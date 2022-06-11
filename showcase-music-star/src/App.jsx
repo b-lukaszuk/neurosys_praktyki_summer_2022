@@ -1,9 +1,10 @@
 import React from 'react';
 
+import Hero from "./containers/Hero";
 import useTitle from "./customHooks/useTitle";
 import VideoCarousel from "./containers/VideoCarousel";
 
-import './App.css';
+import "./App.css";
 
 const App = () => {
 
@@ -13,7 +14,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>{artistName}</h1>
+      <Hero artistName={artistName} />
       <VideoCarousel />
     </div>
   );
