@@ -5,6 +5,7 @@ import VideoCarousel from "./VideoCarousel";
 import "./HomePage.css";
 
 const HomePage = () => {
+
     return (
         <div className="HomePage">
             <h1>Strona główna</h1>
