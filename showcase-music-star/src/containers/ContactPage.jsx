@@ -1,16 +1,23 @@
-import React from 'react';
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
 
+import Button from "../components/Button";
 import ContactForm from "./ContactForm";
 
 import "./ContactPage.css";
 
 const ContactPage = () => {
-    const navigate = useNavigate();
+    const [displContactForm, setDisplContactForm] = useState(false);
     return (
         <div className="ContactPage">
-            <p className="close" onClick={() => navigate(-1)}>&#10006;</p>
-            <ContactForm />
+            <p>Na codzień mieszkam i pracuję w Wielkiej Brytanii.</p>
+            <p>Jakkolwiek, jeśli masz dla mnie ciekawą ofertę to jestem dostępny niemal wszędzie.</p>
+            <p>Wciśnij przycisk kontaktowy poniżej. Skontaktuj się z moim managerem i przedstaw swoją propozycję.</p>
+            <Button onClick={() => setDisplContactForm(true)}
+                displayedText={"Kontakt"} />
+            {
+                displContactForm &&
+                <ContactForm onClose={() => setDisplContactForm(false)} />
+            }
         </div>
     );
 }

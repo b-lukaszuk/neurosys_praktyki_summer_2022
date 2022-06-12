@@ -1,23 +1,30 @@
-fieldset {
+.Question {
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+}
+
+.Question fieldset {
     padding: 1em;
     max-width: 25em;
     margin: 0.25em;
 }
 
-fieldset span {
+.Question fieldset span {
     padding: 0.5em;
+    display: block;
 }
 
-fieldset input[type="radio"] {
+.Question fieldset span input[type="radio"] {
     height: 1.2em;
     width: 1.2em;
     margin: 0.25em;
 }
 
-fieldset input[type="radio"]:hover {
+.Question fieldset span input[type="radio"]:hover {
     cursor: pointer;
 }
 
-fieldset label:hover {
+.Question fieldset span label:hover {
     cursor: pointer;
 }
