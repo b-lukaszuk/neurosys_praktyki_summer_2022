@@ -25,6 +25,7 @@ const ContactForm = (props) => {
     }
     const [questionId, setQuestionId] = useState(0);
     const onClose = props.onClose;
+    const isDisplayed = props.isDisplayed;
 
     const clearAllFields = () => {
         setName("");
@@ -74,57 +75,61 @@ const ContactForm = (props) => {
         }
     }
 
-    return (
-        // pseudo-form
-        <div className="ContactForm">
-            <p className="close" onClick={onClose}>&#10006;</p>
-            <div className="Form">
-                {/* simple regexes written by me, not 100% effective */}
-                {/* normally I would just downloaded proper, spacious ones from the internet*/}
-                <TextInput nameIn={"name"}
-                    changeHandlerIn={(e) => setName(e.target.value)}
-                    labelIn={"Imię i nazwisko"}
-                    patternIn={"^[A-Z][a-z]{1,} [A-Z][a-z]{1,}$"}
-                    placeholderIn={"Jan Kowalski"}
-                    valueIn={name}
-                />
-                <TextInput nameIn={"mail"}
-                    changeHandlerIn={(e) => setMail(e.target.value)}
-                    labelIn={"E-mail"}
-                    patternIn={"^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$"}
-                    placeholderIn={"jan.kowalski@wp.pl"}
-                    valueIn={mail}
-                />
-                <TextInput nameIn={"phone"}
-                    changeHandlerIn={(e) => setPhone(e.target.value)}
-                    labelIn={"Nr telefonu"}
-                    patternIn={"^[0-9]{6,9}$"}
-                    placeholderIn={"555323488"}
-                    valueIn={phone}
-                />
-                <label htmlFor="msg">Twoja wiadomość:&nbsp;</label>
-                <br />
-                <textarea name="msg" id="msg"
-                    cols="30" rows="10"
-                    value={msg}
-                    placeholder="wpisz swoją wiadomość"
-                    onChange={(e) => setMsg(e.target.value)}
-                />
-                <Checkbox name="robotCheck"
-                    displayedText="Nie jestem robotem"
-                    checked={!isRobot}
-                    onClick={toggleIsRobot}
-                />
-                <Button displayedText="Wyślij formularz"
-                    onClick={sendForm} />
-                {
-                    !isRobot &&
-                    <Question actionOnSelect={setAnswerCorrect}
-                        question={questions[questionId]} />
-                }
+    if (isDisplayed) {
+        return (
+            // pseudo-form
+            <div className="ContactForm">
+                <p className="close" onClick={onClose}>&#10006;</p>
+                <div className="Form">
+                    {/* simple regexes written by me, not 100% effective */}
+                    {/* normally I would just downloaded proper, spacious ones from the internet*/}
+                    <TextInput nameIn={"name"}
+                        changeHandlerIn={(e) => setName(e.target.value)}
+                        labelIn={"Imię i nazwisko"}
+                        patternIn={"^[A-Z][a-z]{1,} [A-Z][a-z]{1,}$"}
+                        placeholderIn={"Jan Kowalski"}
+                        valueIn={name}
+                    />
+                    <TextInput nameIn={"mail"}
+                        changeHandlerIn={(e) => setMail(e.target.value)}
+                        labelIn={"E-mail"}
+                        patternIn={"^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$"}
+                        placeholderIn={"jan.kowalski@wp.pl"}
+                        valueIn={mail}
+                    />
+                    <TextInput nameIn={"phone"}
+                        changeHandlerIn={(e) => setPhone(e.target.value)}
+                        labelIn={"Nr telefonu"}
+                        patternIn={"^[0-9]{6,9}$"}
+                        placeholderIn={"555323488"}
+                        valueIn={phone}
+                    />
+                    <label htmlFor="msg">Twoja wiadomość:&nbsp;</label>
+                    <br />
+                    <textarea name="msg" id="msg"
+                        cols="30" rows="10"
+                        value={msg}
+                        placeholder="wpisz swoją wiadomość"
+                        onChange={(e) => setMsg(e.target.value)}
+                    />
+                    <Checkbox name="robotCheck"
+                        displayedText="Nie jestem robotem"
+                        checked={!isRobot}
+                        onClick={toggleIsRobot}
+                    />
+                    <Button displayedText="Wyślij formularz"
+                        onClick={sendForm} />
+                    {
+                        !isRobot &&
+                        <Question actionOnSelect={setAnswerCorrect}
+                            question={questions[questionId]} />
+                    }
+                </div>
             </div>
-        </div>
-    );
+        );
+    } else {
+        return null;
+    }
 }
 
 export default ContactForm;

@@ -121,7 +121,7 @@ const AboutMe = () => {
                 rodzinnym mieście w Suffolk oraz na organizację charytatywną
                 Eltona zajmującą się AIDS.  W marcu 2022 wypuścił
                 dwa single ze współpracą z J Balvin(ang.) zatytułowane
-                "Sigue[18]" oraz "Forever My Love".
+                "Sigue" oraz "Forever My Love".
             </p>
         </div>
     );

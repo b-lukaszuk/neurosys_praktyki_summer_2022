@@ -9,15 +9,14 @@ const ContactPage = () => {
     const [displContactForm, setDisplContactForm] = useState(false);
     return (
         <div className="ContactPage">
+            <h1>Kontakt</h1>
             <p>Na codzień mieszkam i pracuję w Wielkiej Brytanii.</p>
             <p>Jakkolwiek, jeśli masz dla mnie ciekawą ofertę to jestem dostępny niemal wszędzie.</p>
             <p>Wciśnij przycisk kontaktowy poniżej. Skontaktuj się z moim managerem i przedstaw swoją propozycję.</p>
             <Button onClick={() => setDisplContactForm(true)}
                 displayedText={"Kontakt"} />
-            {
-                displContactForm &&
-                <ContactForm onClose={() => setDisplContactForm(false)} />
-            }
+            <ContactForm isDisplayed={displContactForm}
+                onClose={() => setDisplContactForm(false)} />
         </div>
     );
 }

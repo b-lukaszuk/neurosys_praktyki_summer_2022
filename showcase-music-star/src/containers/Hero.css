@@ -1,7 +1,7 @@
 .Hero {
     height: 20vh;
     background-color: lightgray;
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Ed_Sheeran_at_2012_Frequency_Festival_in_Austria_%287852625324%29.jpg/294px-Ed_Sheeran_at_2012_Frequency_Festival_in_Austria_%287852625324%29.jpg);
+    background-image: url("../images/EdSheeranWiki.jpg");
     display: flex;
     justify-content: center;
     flex-direction: column;
