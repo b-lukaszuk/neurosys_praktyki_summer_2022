@@ -45,7 +45,7 @@ const questions = [
         ],
     },
     {
-        id: 5, question: "Kto jest autorem albumu Let it Be (1970)",
+        id: 5, question: "Kto jest autorem albumu Let it Be (1970)?",
         answers: [
             { id: 0, answer: "The Beatles", isCorrect: true },
             { id: 1, answer: "Britney Spears", isCorrect: false },
@@ -63,7 +63,7 @@ const questions = [
         ],
     },
     {
-        id: 7, question: "Który z wymienionych jest utworem grupy Roxette",
+        id: 7, question: "Który z wymienionych jest utworem grupy Roxette?",
         answers: [
             { id: 0, answer: "Oops!…I Did It Again", isCorrect: false },
             { id: 1, answer: "Crazy, it's My Life", isCorrect: false },
