@@ -44,6 +44,8 @@ const ContactForm = (props) => {
         return pattern.test(text);
     }
 
+    /* below: simple regexes written by me, not 100% effective, but they will do */
+    /* normally I would just downloaded proper, spacious ones from the internet*/
     const isMailOk = () => {
         return isTextOk(/^[a-z.]{1,}@([a-z]{1,}\.)[a-z]{2,4}$/, mail);
     }
@@ -98,7 +100,7 @@ const ContactForm = (props) => {
             <div className="ContactForm">
                 <p className="close" onClick={onClose}>&#10006;</p>
                 <div className="Form">
-                    {/* simple regexes written by me, not 100% effective, but they will do */}
+                    {/* below: simple regexes written by me, not 100% effective, but they will do */}
                     {/* normally I would just downloaded proper, spacious ones from the internet*/}
                     <TextInput nameIn={"name"}
                         changeHandlerIn={(e) => setName(e.target.value)}
