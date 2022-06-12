@@ -8,7 +8,10 @@ import "./ContactPage.css";
 const ContactPage = () => {
     const [displContactForm, setDisplContactForm] = useState(false);
     return (
-        <div className="ContactPage">
+        <div className="ContactPage"
+            onClick={() => {
+                if (displContactForm) { setDisplContactForm(false) }
+            }}>
             <p>Na codzień mieszkam i pracuję w Wielkiej Brytanii.</p>
             <p>Jakkolwiek, jeśli masz dla mnie ciekawą ofertę to jestem dostępny niemal wszędzie.</p>
             <p>Wciśnij przycisk kontaktowy poniżej. Skontaktuj się z moim managerem i przedstaw swoją propozycję.</p>
