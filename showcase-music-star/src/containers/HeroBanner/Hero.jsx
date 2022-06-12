@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 import "./Hero.css";
 
 const getUl = (routes) => {
@@ -8,7 +10,9 @@ const getUl = (routes) => {
             {routes.map((r) => {
                 return (
                     <li key={r.id}>
-                        <a href={r.path}> {r.name} </a>
+                        <Link to={r.path}>
+                            {r.name}
+                        </Link>
                     </li>
                 );
             })}

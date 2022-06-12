@@ -27,8 +27,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <Hero artistName={artistName} validRoutes={validRoutes} />
       <Router>
+        <Hero artistName={artistName} validRoutes={validRoutes} />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
