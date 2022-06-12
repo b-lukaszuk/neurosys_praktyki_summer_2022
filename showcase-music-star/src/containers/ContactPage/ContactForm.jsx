@@ -49,7 +49,7 @@ const ContactForm = (props) => {
     }
 
     const isMsgOk = () => {
-        return msg.trim().length > 20 ? true : false;
+        return msg.trim().length >= 20 ? true : false;
     }
 
     const isNameOk = () => {
