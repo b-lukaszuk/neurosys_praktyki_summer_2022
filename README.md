@@ -41,6 +41,17 @@ Podczas tworzenia strony należy wykorzystać system kontroli wersji GIT i publi
 
 [Go to: Table of contents](#table-of-contents)
 
+### Pierwsze Uruchomienie
+
+```bash
+cd showcase-music-star
+npm install # installs neccessary packages into ./node_modules/
+npm start # opens http://localhost:3000/ in the browser
+# Ctrl-C stops the running localhost
+```
+
+### Ponowne Uruchomienie
+
 ```bash
 cd showcase-music-star
 npm start # opens http://localhost:3000/ in the browser
