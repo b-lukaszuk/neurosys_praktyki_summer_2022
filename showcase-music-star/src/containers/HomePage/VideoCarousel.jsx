@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Video from "../components/Video";
+import Video from "../../components/Video";
 
 import "./VideoCarousel.css";
 

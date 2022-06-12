@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-import Button from "../components/Button";
-import Checkbox from "../components/Checkbox";
+import Button from "../../components/Button";
+import Checkbox from "../../components/Checkbox";
 import Question from "./Question";
-import questions from "../questionsDb/questions";
-import TextInput from "../components/TextInput";
+import questions from "../../questionsDb/questions";
+import TextInput from "../../components/TextInput";
 
 import "./ContactForm.css";
 

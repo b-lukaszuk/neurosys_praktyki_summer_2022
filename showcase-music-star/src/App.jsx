@@ -5,11 +5,11 @@ import {
   Routes,
 } from "react-router-dom";
 
-import AboutMe from "./containers/AboutMe";
-import ContactPage from "./containers/ContactPage";
-import Hero from "./containers/Hero";
-import HomePage from "./containers/HomePage";
-import PageNotFound from './containers/PageNotFound';
+import AboutMe from "./containers/AboutMe/AboutMe";
+import ContactPage from "./containers/ContactPage/ContactPage";
+import Hero from "./containers/HeroBanner/Hero";
+import HomePage from "./containers/HomePage/HomePage";
+import PageNotFound from "./containers/PageNotFound/PageNotFound";
 import useTitle from "./customHooks/useTitle";
 
 import "./App.css";

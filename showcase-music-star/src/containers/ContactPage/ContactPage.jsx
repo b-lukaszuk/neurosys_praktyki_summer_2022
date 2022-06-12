@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Button from "../components/Button";
+import Button from "../../components/Button";
 import ContactForm from "./ContactForm";
 
 import "./ContactPage.css";
