@@ -6,6 +6,7 @@ const Question = (props) => {
 
     // props
     const actionOnSelect = props.actionOnSelect;
+    const isDisplayed = props.isDisplayed;
     const question = props.question;
 
     // inner state
@@ -37,16 +38,20 @@ const Question = (props) => {
         actionOnSelect(question.answers[selectedChoice].isCorrect);
     }, [actionOnSelect, question.answers, selectedChoice]);
 
-    return (
-        <div className="Question">
-            <form action="">
-                <fieldset>
-                    <legend>{question.question}</legend>
-                    {question.answers.map((a) => getRadio(a))}
-                </fieldset>
-            </form>
-        </div>
-    );
+    if (isDisplayed) {
+        return (
+            <div className="Question">
+                <form action="">
+                    <fieldset>
+                        <legend>{question.question}</legend>
+                        {question.answers.map((a) => getRadio(a))}
+                    </fieldset>
+                </form>
+            </div>
+        );
+    } else {
+        return null;
+    }
 }
 
 export default Question;

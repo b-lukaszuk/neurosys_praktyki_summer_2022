@@ -123,11 +123,8 @@ const ContactForm = (props) => {
                     />
                     <Button displayedText="Wyślij formularz"
                         onClick={sendForm} />
-                    {
-                        !isRobot &&
-                        <Question actionOnSelect={setAnswerCorrect}
-                            question={questions[questionId]} />
-                    }
+                    <Question actionOnSelect={setAnswerCorrect}
+                        isDisplayed={!isRobot} question={questions[questionId]} />
                 </div>
             </div>
         );
