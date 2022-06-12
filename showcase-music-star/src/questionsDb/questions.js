@@ -35,6 +35,60 @@ const questions = [
             { id: 3, answer: "I See Fire", isCorrect: true },
         ],
     },
+    {
+        id: 4, question: "W jakim kraju się urodziłem?",
+        answers: [
+            { id: 0, answer: "Stany Zjednoczone Ameryki Północnej", isCorrect: false },
+            { id: 1, answer: "Zjednoczone Emiraty Arabskie", isCorrect: false },
+            { id: 2, answer: "Niemcy", isCorrect: false },
+            { id: 3, answer: "Wielka Brytania", isCorrect: true },
+        ],
+    },
+    {
+        id: 5, question: "Kto jest autorem albumu Let it Be (1970)",
+        answers: [
+            { id: 0, answer: "The Beatles", isCorrect: true },
+            { id: 1, answer: "Britney Spears", isCorrect: false },
+            { id: 2, answer: "Ed Sheeran", isCorrect: false },
+            { id: 3, answer: "Austin Powers", isCorrect: false },
+        ],
+    },
+    {
+        id: 6, question: "Co jest piękniejsze od muzyki?",
+        answers: [
+            { id: 0, answer: "Więcej muzyki", isCorrect: false },
+            { id: 1, answer: "Cisza", isCorrect: true },
+            { id: 2, answer: "Natura", isCorrect: false },
+            { id: 3, answer: "Świetna fryzura", isCorrect: false },
+        ],
+    },
+    {
+        id: 7, question: "Który z wymienionych jest utworem grupy Roxette",
+        answers: [
+            { id: 0, answer: "Oops!…I Did It Again", isCorrect: false },
+            { id: 1, answer: "Crazy, it's My Life", isCorrect: false },
+            { id: 2, answer: "Listen to Your Heart", isCorrect: true },
+            { id: 3, answer: "I See Fire", isCorrect: false },
+        ],
+    },
+    {
+        id: 8, question: "Które z poniższych skomponował Franz Schubert?",
+        answers: [
+            { id: 0, answer: "Sonata Księżycowa", isCorrect: false },
+            { id: 1, answer: "Ave Maria", isCorrect: true },
+            { id: 2, answer: "Eine Kleine Nachtmusik", isCorrect: false },
+            { id: 3, answer: "Nad Pięknym Modrym Dunajem", isCorrect: false },
+        ],
+    },
+    {
+        id: 9, question: "Znany polski kompozytor to?",
+        answers: [
+            { id: 0, answer: "Wolfgang Amadeusz Mozart", isCorrect: false },
+            { id: 1, answer: "Franz Schubert", isCorrect: false },
+            { id: 2, answer: "Ludwig van Beethoven", isCorrect: false },
+            { id: 3, answer: "Fryderyk Chopin", isCorrect: true },
+        ],
+    },
 ];
 
 export default questions;

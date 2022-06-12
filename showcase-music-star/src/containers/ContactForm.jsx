@@ -17,9 +17,13 @@ const ContactForm = (props) => {
     const [isRobot, setIsRobot] = useState(true);
     const [answerCorrect, setAnswerCorrect] = useState(false);
     const getRandQuestionId = () => {
-        return Math.floor(Math.random() * (questions.length - 0)) + 0;
+        let newQuestionId = questionId;
+        while (newQuestionId === questionId) {
+            newQuestionId = Math.floor(Math.random() * (questions.length - 0)) + 0;
+        }
+        return newQuestionId;
     }
-    const [questionId, setQuestionId] = useState(getRandQuestionId());
+    const [questionId, setQuestionId] = useState(0);
     const onClose = props.onClose;
 
     const clearAllFields = () => {
@@ -102,6 +106,7 @@ const ContactForm = (props) => {
                 <br />
                 <textarea name="msg" id="msg"
                     cols="30" rows="10"
+                    value={msg}
                     placeholder="wpisz swoją wiadomość"
                     onChange={(e) => setMsg(e.target.value)}
                 />
