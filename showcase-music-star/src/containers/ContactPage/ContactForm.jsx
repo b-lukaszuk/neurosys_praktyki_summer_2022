@@ -60,7 +60,7 @@ const ContactForm = (props) => {
         return isTextOk(/^[0-9]{6,9}$/, phone);
     }
 
-    const checkFormGetErrors = () => {
+    const validateFormGetErrors = () => {
         let prefix = "\n- Nieprawidłowy input w polu: ";
         let errorMsg = "";
         const appendToErrMsg = (text) => { errorMsg += (prefix + text); }
@@ -77,7 +77,7 @@ const ContactForm = (props) => {
     }
 
     const sendForm = () => {
-        let errors = checkFormGetErrors();
+        let errors = validateFormGetErrors();
         if (errors.trim().length !== 0) {
             window.alert("Podczas wysyłania formularza wystąpiły błędy.\n" +
                 errors + "\n\nPopraw je i spróbuj ponownie");
