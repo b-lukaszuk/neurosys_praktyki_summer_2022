@@ -45,7 +45,7 @@ const ContactForm = (props) => {
     }
 
     const isMailOk = () => {
-        return isTextOk(/^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$/, mail);
+        return isTextOk(/^[a-z.]{1,}@([a-z]{1,}\.)[a-z]{2,4}$/, mail);
     }
 
     const isMsgOk = () => {
@@ -60,16 +60,27 @@ const ContactForm = (props) => {
         return isTextOk(/^[0-9]{6,9}$/, phone);
     }
 
-    const sendForm = () => {
-        if (isRobot) {
-            window.alert("Zaznacz pole 'Nie jestem Robotem'");
-        } else if (!isNameOk() && !isPhoneOk() && !isMailOk()) {
-            window.alert("Wprowadzono niepoprawne dane. Popraw input.");
-        } else if (!isMsgOk()) {
-            window.alert("Wiadomosc jest za krotka (>= 20 znaków)");
-        } else if (!answerCorrect) {
-            window.alert("Niepoprawna odpowiedź na pytanie. Spróbuj ponownie");
+    const checkFormGetErrors = () => {
+        let prefix = "\n- Nieprawidłowy input w polu: ";
+        let errorMsg = "";
+        const appendToErrMsg = (text) => { errorMsg += (prefix + text); }
+        if (!isNameOk()) { appendToErrMsg("Imię i Nazwisko") }
+        if (!isPhoneOk()) { appendToErrMsg("Nr telefonu") }
+        if (!isMailOk()) { appendToErrMsg("E-mail") }
+        if (!isMsgOk()) { appendToErrMsg("Twoja wiadomość") }
+        if (isRobot) { errorMsg += "\n- Pole 'Nie jestem robotem' musi być zaznaczone" }
+        if (!isRobot && !answerCorrect) {
+            appendToErrMsg("Odpowiedź na pytanie kontrolne");
             setQuestionId(getRandQuestionId());
+        }
+        return errorMsg;
+    }
+
+    const sendForm = () => {
+        let errors = checkFormGetErrors();
+        if (errors.trim().length !== 0) {
+            window.alert("Podczas wysyłania formularza wystąpiły błędy.\n" +
+                errors + "\n\nPopraw je i spróbuj ponownie");
         } else {
             clearAllFields();
             actionOnSent();
