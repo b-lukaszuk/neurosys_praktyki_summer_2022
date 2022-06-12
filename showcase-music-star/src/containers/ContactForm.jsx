@@ -10,53 +10,53 @@ import "./ContactForm.css";
 
 const ContactForm = (props) => {
 
-    const [name, setName] = useState("");
-    const [mail, setMail] = useState("");
-    const [phone, setPhone] = useState("");
-    const [msg, setMsg] = useState("");
-    const [isRobot, setIsRobot] = useState(true);
-    const [answerCorrect, setAnswerCorrect] = useState(false);
-    const getRandQuestionId = () => {
-        let newQuestionId = questionId;
-        while (newQuestionId === questionId) {
-            newQuestionId = Math.floor(Math.random() * (questions.length - 0)) + 0;
-        }
-        return newQuestionId;
-    }
-    const [questionId, setQuestionId] = useState(0);
+    // props
     const onClose = props.onClose;
     const isDisplayed = props.isDisplayed;
 
+    // inner state
+    const [answerCorrect, setAnswerCorrect] = useState(false);
+    const [isRobot, setIsRobot] = useState(true);
+    const [mail, setMail] = useState("");
+    const [msg, setMsg] = useState("");
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
+    const [questionId, setQuestionId] = useState(0);
+
     const clearAllFields = () => {
-        setName("");
-        setMail("");
-        setPhone("");
-        setMsg("")
         setIsRobot(true);
+        setMail("");
+        setMsg("")
+        setName("");
+        setPhone("");
     }
 
-    const toggleIsRobot = () => {
-        setIsRobot((prev) => !prev);
+    const getRandQuestionId = () => {
+        let newQuestionId = questionId;
+        while (newQuestionId === questionId) {
+            newQuestionId = Math.floor(Math.random() * questions.length);
+        }
+        return newQuestionId;
     }
 
     const isTextOk = (pattern, text) => {
         return pattern.test(text);
     }
 
-    const isNameOk = () => {
-        return isTextOk(/^[A-Z][a-z]{1,} [A-Z][a-z]{1,}$/, name);
-    }
-
     const isMailOk = () => {
         return isTextOk(/^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$/, mail);
     }
 
-    const isPhoneOk = () => {
-        return isTextOk(/^[0-9]{6,9}$/, phone);
-    }
-
     const isMsgOk = () => {
         return msg.trim().length > 20 ? true : false;
+    }
+
+    const isNameOk = () => {
+        return isTextOk(/^[A-Z][a-z]{1,} [A-Z][a-z]{1,}$/, name);
+    }
+
+    const isPhoneOk = () => {
+        return isTextOk(/^[0-9]{6,9}$/, phone);
     }
 
     const sendForm = () => {
@@ -75,13 +75,17 @@ const ContactForm = (props) => {
         }
     }
 
+    const toggleIsRobot = () => {
+        setIsRobot((prev) => !prev);
+    }
+
     if (isDisplayed) {
         return (
             // pseudo-form
             <div className="ContactForm">
                 <p className="close" onClick={onClose}>&#10006;</p>
                 <div className="Form">
-                    {/* simple regexes written by me, not 100% effective */}
+                    {/* simple regexes written by me, not 100% effective, but they will do */}
                     {/* normally I would just downloaded proper, spacious ones from the internet*/}
                     <TextInput nameIn={"name"}
                         changeHandlerIn={(e) => setName(e.target.value)}

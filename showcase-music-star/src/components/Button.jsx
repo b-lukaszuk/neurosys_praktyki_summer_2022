@@ -3,8 +3,9 @@ import React from "react";
 import "./Button.css";
 
 function Button(props) {
-    const onClick = props.onClick;
+
     const displayedText = props.displayedText;
+    const onClick = props.onClick;
 
     return (
         <button className="button"

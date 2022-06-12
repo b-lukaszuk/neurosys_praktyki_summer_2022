@@ -5,6 +5,8 @@ import Video from "../components/Video";
 import "./VideoCarousel.css";
 
 const VideoCarousel = () => {
+
+    const [displVideoId, setDisplVideoId] = useState(0);
     const videosUrls = [
         "https://www.youtube.com/embed/2Vv-BfVoq4g",
         "https://www.youtube.com/embed/orJSJGHjBLI",
@@ -13,7 +15,6 @@ const VideoCarousel = () => {
         "https://www.youtube.com/embed/lp-EO5I60KA",
         "https://www.youtube.com/embed/JGwWNGJdvx8",
     ];
-    const [displVideoId, setDisplVideoId] = useState(0);
 
     const changeVideo = (by) => {
         let newId = displVideoId + by;

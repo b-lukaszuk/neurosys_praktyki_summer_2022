@@ -1,8 +1,8 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Routes,
   Route,
+  Routes,
 } from "react-router-dom";
 
 import AboutMe from "./containers/AboutMe";

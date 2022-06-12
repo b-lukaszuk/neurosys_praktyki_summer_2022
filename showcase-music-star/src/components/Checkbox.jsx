@@ -4,9 +4,9 @@ import "./Checkbox.css";
 
 const Checkbox = (props) => {
 
-    const name = props.name;
     const displayedText = props.displayedText;
     const checked = props.checked;
+    const name = props.name;
     const onClick = props.onClick;
 
     return (

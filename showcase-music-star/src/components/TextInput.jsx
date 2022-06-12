@@ -3,9 +3,10 @@ import React from "react";
 import "./TextInput.css";
 
 const InputElt = (props) => {
-    const nameIn = props.nameIn;
+
     const changeHandlerIn = props.changeHandlerIn;
     const labelIn = props.labelIn;
+    const nameIn = props.nameIn;
     const patternIn = props.patternIn ? props.patternIn : ".*";
     const placeholderIn = props.placeholderIn ? props.placeholderIn : "";
     const typeIn = props.typeIn ? props.typeIn : "text"

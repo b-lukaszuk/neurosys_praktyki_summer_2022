@@ -17,6 +17,7 @@ const getUl = (routes) => {
 }
 
 const Hero = (props) => {
+
     const artistName = props.artistName;
     const validRoutes = props.validRoutes;
 

@@ -6,7 +6,9 @@ import ContactForm from "./ContactForm";
 import "./ContactPage.css";
 
 const ContactPage = () => {
+
     const [displContactForm, setDisplContactForm] = useState(false);
+
     return (
         <div className="ContactPage">
             <h1>Kontakt</h1>

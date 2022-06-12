@@ -3,12 +3,18 @@ import React, { useState, useEffect } from 'react';
 import "./Question.css";
 
 const Question = (props) => {
+
+    // props
     const actionOnSelect = props.actionOnSelect;
     const question = props.question;
+
+    // inner state
     const [selectedChoice, setSelectedChoice] = useState(0);
+
     const onSelect = (answer) => {
         setSelectedChoice(answer.id);
     };
+
     const getRadio = (answer) => {
         return (
             <span key={answer.id}>
