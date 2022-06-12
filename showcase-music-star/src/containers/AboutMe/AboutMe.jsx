@@ -12,7 +12,7 @@ const AboutMe = () => {
                 pisze o mnie wikipedia:
             </p>
             <p>
-                Ed Sheeran, właśc. Edward Christopher Sheeran (ur. 17 lutego
+                <b>Ed Sheeran</b>, właśc. Edward Christopher Sheeran (ur. 17 lutego
                 1991 w Halifaksie) – brytyjski piosenkarz, autor tekstów,
                 gitarzysta, producent muzyczny i aktor, wykonujący muzykę z
                 pogranicza popu, rocka, folku i hip-hopu.

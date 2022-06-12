@@ -9,8 +9,8 @@ const HomePage = () => {
     return (
         <div className="HomePage">
             <h1>Strona główna</h1>
-            <p>Zapraszam do obejrzenia klipów kilku moich ulubionych piosenek</p>
-            <p>Warto :)</p>
+            <p>Cześć, tu Ed Sheeran</p>
+            <p>Zapraszam do obejrzenia klipów moich ulubionych piosenek. Warto :)</p>
             <VideoCarousel />
         </div>
     );
