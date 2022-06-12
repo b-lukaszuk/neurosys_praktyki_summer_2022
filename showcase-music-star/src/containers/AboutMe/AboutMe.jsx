@@ -123,6 +123,7 @@ const AboutMe = () => {
                 dwa single ze współpracą z J Balvin(ang.) zatytułowane
                 "Sigue" oraz "Forever My Love".
             </p>
+            <p>Ok, wystarczy, resztę możesz doczytać na wikipedii :)</p>
         </div>
     );
 }
