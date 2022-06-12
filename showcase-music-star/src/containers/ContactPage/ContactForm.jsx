@@ -111,9 +111,9 @@ const ContactForm = (props) => {
                     <label htmlFor="msg">Twoja wiadomość:&nbsp;</label>
                     <br />
                     <textarea name="msg" id="msg"
-                        cols="30" rows="10"
+                        cols="60" rows="10"
                         value={msg}
-                        placeholder="wpisz swoją wiadomość"
+                        placeholder="wpisz swoją wiadomość (min. 20 znaków)"
                         onChange={(e) => setMsg(e.target.value)}
                     />
                     <Checkbox name="robotCheck"
