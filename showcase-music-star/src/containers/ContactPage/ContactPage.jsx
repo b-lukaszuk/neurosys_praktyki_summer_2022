@@ -20,6 +20,7 @@ const ContactPage = () => {
             <Button onClick={() => setDisplContactForm(true)}
                 displayedText={"Kontakt (Napisz do mnie)"} />
             <ContactForm isDisplayed={displContactForm}
+                actionOnSent={() => setDisplContactForm(false)}
                 onClose={() => setDisplContactForm(false)} />
         </div>
     );

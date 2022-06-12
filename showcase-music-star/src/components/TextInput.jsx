@@ -21,8 +21,8 @@ const InputElt = (props) => {
                 pattern={patternIn}
                 placeholder={placeholderIn}
                 value={valueIn}
-                maxLength={40}
-                size={40}
+                maxLength={30}
+                size={30}
                 onChange={changeHandlerIn}
             />
         </div>

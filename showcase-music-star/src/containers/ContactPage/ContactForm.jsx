@@ -11,6 +11,7 @@ import "./ContactForm.css";
 const ContactForm = (props) => {
 
     // props
+    const actionOnSent = props.actionOnSent;
     const onClose = props.onClose;
     const isDisplayed = props.isDisplayed;
 
@@ -70,8 +71,9 @@ const ContactForm = (props) => {
             window.alert("Niepoprawna odpowiedź na pytanie. Spróbuj ponownie");
             setQuestionId(getRandQuestionId());
         } else {
-            window.alert("Formularz wysłany");
             clearAllFields();
+            actionOnSent();
+            window.alert("Formularz wysłany");
         }
     }
 
