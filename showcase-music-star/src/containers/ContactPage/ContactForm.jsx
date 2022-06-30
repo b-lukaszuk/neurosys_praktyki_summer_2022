@@ -47,7 +47,7 @@ const ContactForm = (props) => {
     /* below: simple regexes written by me, not 100% effective, but they will do */
     /* normally I would just downloaded proper, spacious ones from the internet*/
     const isMailOk = () => {
-        return isTextOk(/^[a-z.]{1,}@([a-z]{1,}\.)[a-z]{2,4}$/, mail);
+        return isTextOk(/^[a-z.0-9]{1,}@([a-z0-9]{1,}\.)[a-z]{2,4}$/, mail);
     }
 
     const isMsgOk = () => {
@@ -112,7 +112,7 @@ const ContactForm = (props) => {
                     <TextInput nameIn={"mail"}
                         changeHandlerIn={(e) => setMail(e.target.value)}
                         labelIn={"E-mail"}
-                        patternIn={"^[a-z.]{1,}@([a-z]{1,}\\.)[a-z]{2,4}$"}
+                        patternIn={"^[a-z.0-9]{1,}@([a-z0-9]{1,}\\.)[a-z]{2,4}$"}
                         placeholderIn={"jan.kowalski@wp.pl"}
                         valueIn={mail}
                     />
