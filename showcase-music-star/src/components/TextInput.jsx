@@ -14,7 +14,7 @@ const InputElt = (props) => {
 
     return (
         <div className="textInput">
-            <span>{labelIn}: &nbsp;</span>
+            <span className="label">{labelIn}: &nbsp;</span>
             <input
                 name={nameIn}
                 type={typeIn}
